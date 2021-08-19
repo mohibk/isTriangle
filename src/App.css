@@ -1,0 +1,20 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  margin: 0 auto;
+  align-items: center;
+}
+
+#angle-1,
+#angle-2,
+#angle-3 {
+  margin-top: 0.35rem;
+  margin-bottom: 0.5rem;
+  padding: 0.5rem 1rem;
+}
+
+button {
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+}
