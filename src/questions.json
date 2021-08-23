@@ -1,0 +1,192 @@
+[
+  {
+    "id": 0,
+    "question": "Which of the following is not a criterion for congruence of triangles?",
+    "options": [
+      {
+        "id": 0,
+        "option": "Side, Side, Side (SSS)"
+      },
+      {
+        "id": 1,
+        "option": "Angle, Angle, Angle (AAA)"
+      },
+      {
+        "id": 2,
+        "option": "Side, Angle, Side (SAS)"
+      }
+    ],
+    "correctAnswer": "Angle, Angle, Angle (AAA)"
+  },
+  {
+    "id": 1,
+    "question": "What is the third angle for the triangle where angle1 = 45° and angle2 = 45°?",
+    "options": [
+      {
+        "id": 0,
+        "option": "45°"
+      },
+      {
+        "id": 1,
+        "option": "90°"
+      },
+      {
+        "id": 2,
+        "option": "60°"
+      }
+    ],
+    "correctAnswer": "90°"
+  },
+  {
+    "id": 2,
+    "question": "What is the third angle for the triangle where angle1 = 90° and angle2 = 60°?",
+    "options": [
+      {
+        "id": 0,
+        "option": "acute angle"
+      },
+      {
+        "id": 1,
+        "option": "obtuse angle"
+      },
+      {
+        "id": 2,
+        "option": "right angle"
+      }
+    ],
+    "correctAnswer": "acute angle"
+  },
+  {
+    "id": 3,
+    "question": "Which of the following can form a right angled triangle?",
+    "options": [
+      {
+        "id": 0,
+        "option": "1, 2, 3"
+      },
+      {
+        "id": 1,
+        "option": "3, 4, 5"
+      },
+      {
+        "id": 2,
+        "option": "5, 6, 7"
+      }
+    ],
+    "correctAnswer": "3, 4, 5"
+  },
+  {
+    "id": 4,
+    "question": "Which of the following triangles are always similar?",
+    "options": [
+      {
+        "id": 0,
+        "option": "scalene triangle"
+      },
+      {
+        "id": 1,
+        "option": "isosceles triangle"
+      },
+      {
+        "id": 2,
+        "option": "equilateral triangle"
+      }
+    ],
+    "correctAnswer": "equilateral triangle"
+  },
+  {
+    "id": 5,
+    "question": "If one angle of a triangle is obtuse, then which one of the following is the possible measure of remaining angles?",
+    "options": [
+      {
+        "id": 0,
+        "option": "100°"
+      },
+      {
+        "id": 1,
+        "option": "90°"
+      },
+      {
+        "id": 2,
+        "option": "85°"
+      }
+    ],
+    "correctAnswer": "85°"
+  },
+  {
+    "id": 6,
+    "question": "The perimeter of scalene triangle with sides a, b, c is",
+    "options": [
+      {
+        "id": 0,
+        "option": "a + b + c"
+      },
+      {
+        "id": 1,
+        "option": "2a"
+      },
+      {
+        "id": 2,
+        "option": "(a + b + c) / 2"
+      }
+    ],
+    "correctAnswer": "a + b + c"
+  },
+  {
+    "id": 7,
+    "question": "A scalene triangle has ___ lines of symmetry",
+    "options": [
+      {
+        "id": 0,
+        "option": "no"
+      },
+      {
+        "id": 1,
+        "option": "100"
+      },
+      {
+        "id": 2,
+        "option": "12"
+      }
+    ],
+    "correctAnswer": "no"
+  },
+  {
+    "id": 8,
+    "question": "There is a right triangle PQR where: ∠ Q = 90°; ∠ P = ∠ R. What is the measure of ∠s P and R?",
+    "options": [
+      {
+        "id": 0,
+        "option": "45°"
+      },
+      {
+        "id": 1,
+        "option": "90°"
+      },
+      {
+        "id": 2,
+        "option": "60°"
+      }
+    ],
+    "correctAnswer": "45°"
+  },
+  {
+    "id": 9,
+    "question": "What is the third angle for the triangle where angle1 = 45° and angle2 = 45°?",
+    "options": [
+      {
+        "id": 0,
+        "option": "acute angle"
+      },
+      {
+        "id": 1,
+        "option": "obtuse angle"
+      },
+      {
+        "id": 2,
+        "option": "right angle"
+      }
+    ],
+    "correctAnswer": "right angle"
+  }
+]

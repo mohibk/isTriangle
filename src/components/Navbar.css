@@ -1,0 +1,26 @@
+nav {
+  margin-top: 0;
+  background-color: #0f172a;
+  color: #22d3ee;
+}
+
+ul {
+  display: flex;
+  list-style-type: none;
+  max-width: 1280px;
+  margin: auto;
+}
+
+li {
+  margin: 0.65rem 0.5rem;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+li .link {
+  color: #22d3ee;
+}
+
+li .link:hover {
+  color: #6d28d9;
+}

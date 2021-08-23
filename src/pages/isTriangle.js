@@ -1,27 +1,27 @@
 import { useState } from "react";
 
-const IS_A_TRIANGLE = "Yo, the angles form a triangle";
-const NOT_A_TRIANGLE = "Uh oh, that ain't no triangle, yo";
-const ERROR_MSG = "Please, enter valid angles, yo";
+const IS_A_TRIANGLE = "Yay, the angles form a triangle 😊";
+const NOT_A_TRIANGLE = "Uh oh, that ain't no triangle 😔";
+const ERROR_MSG = "Please, enter valid angles 😐";
 
 export default function IsTriangle() {
   let [angleOne, setAngleOne] = useState("");
   let [angleTwo, setAngleTwo] = useState("");
   let [angleThree, setAngleThree] = useState("");
   const [message, setMessage] = useState("");
+  const [error, setError] = useState("");
+
+  const isValid = angleOne && angleThree && angleTwo;
 
   const handleCheck = () => {
-    angleOne = Number(angleOne);
-    angleTwo = Number(angleTwo);
-    angleThree = Number(angleThree);
+    setMessage("");
+    setError(ERROR_MSG);
+    if (!isValid) return;
 
-    if (angleOne && angleThree && angleTwo) {
-      const sumOfAngles = angleOne + angleTwo + angleThree;
-      let msg = sumOfAngles === 180 ? IS_A_TRIANGLE : NOT_A_TRIANGLE;
-      setMessage(msg);
-    } else {
-      setMessage(ERROR_MSG);
-    }
+    const sumOfAngles = angleOne + angleTwo + angleThree;
+    let msg = sumOfAngles === 180 ? IS_A_TRIANGLE : NOT_A_TRIANGLE;
+    setError("");
+    setMessage(msg);
   };
 
   return (
@@ -34,7 +34,7 @@ export default function IsTriangle() {
         id="angle-1"
         autoFocus
         value={angleOne}
-        onChange={({ target }) => setAngleOne(target.value)}
+        onChange={({ target }) => setAngleOne(parseInt(target.value))}
       />
 
       <label htmlFor="angle-2">Angle 2 (in degrees)</label>
@@ -42,7 +42,7 @@ export default function IsTriangle() {
         type="number"
         id="angle-2"
         value={angleTwo}
-        onChange={({ target }) => setAngleTwo(target.value)}
+        onChange={({ target }) => setAngleTwo(parseInt(target.value))}
       />
 
       <label htmlFor="angle-3">Angle 3 (in degrees)</label>
@@ -50,12 +50,14 @@ export default function IsTriangle() {
         type="number"
         id="angle-3"
         value={angleThree}
-        onChange={({ target }) => setAngleThree(target.value)}
+        onChange={({ target }) => setAngleThree(parseInt(target.value))}
       />
 
       <button onClick={handleCheck}>Check</button>
 
       <p>{message}</p>
+
+      <p className="error">{error}</p>
     </div>
   );
 }
